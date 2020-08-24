@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.projectcontainer{
+    padding-top: 10px;
+    background-image: url('./img/seaskyline.jpg');
+    background-size: 100%, 100%;
+    height: 100vh;
+    background-repeat: none;
+}
+
+.pageTitle{
+    font-size: 60px;
+    display: inline-block;
+}
+
+.project{
+    display: inline-block;
+    width: 68%;
+    vertical-align: middle;
+}
+
+.LeftArrow{
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.RightArrow{
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.LArrow{
+    transform: rotate(270deg);
+    width: 115px;
+    height: 150px;
+    position: relative;
+}
+
+.RArrow{
+    transform: rotate(90deg);
+    width: 115px;
+    height: 150px;
+    position: relative;
+}
+
+.webPageimg{
+    width: 1000px;
+    height: 600px;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.infoCol{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 250px;
+    height: 600px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(58, 57, 57);
+    margin-left:20px;
+}
+
+li{
+    font-size: 15px;
+}
+
+.Darrow{
+    transform: rotate(180deg);
+    width: 140px;
+    height: 170px;
+    position: relative;
+}
+
+.footer{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    
+}
+
+.link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.link-button:hover,
+.link-button:focus {
+    text-decoration: underline;
+}
+
+.seperator{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.col4{
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.projectDesc{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    /* margin: auto; */
+}
+
+.Desc{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top:15px;
+    margin-bottom: 25px;
+}
+
+.listHead{
+    font-size: 20px;
+
+}
+
+.WIP{
+    margin-top: 10px
+}
+
+.projTitle{
+    font-size:50px;
+    margin-bottom: 5px;;
+}
+
+.githubLink{
+    margin-top: 15px;
+}

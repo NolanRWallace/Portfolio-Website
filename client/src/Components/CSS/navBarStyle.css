@@ -1,0 +1,24 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbarText{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.navBarContainer{
+    text-align: center;
+    margin-right: 50px;
+    width: 100%;
+    display: inline-block;
+}
+
+.HeaderContainer{
+    width: 100%;
+}
+
+

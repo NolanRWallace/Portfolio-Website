@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.homecontainer{
+    padding-top: 150px;
+    background-image: url('./img/seaskyline.jpg');
+    background-size: 100%, 100%;
+    height: 100vh;
+    background-repeat: none;
+}
+
+.profilePic{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info{
+    display: inline-block;
+    width: fit-content;
+    margin: 20px;
+}
+
+.about{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nameTitle{
+    display: inline-block;
+    vertical-align: middle;
+    /* position: relative;
+    top: 30px;
+    left: 20px; */
+    margin-left: 25px;
+}
+
+.name{
+    font-size: 25px;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.info{
+    word-wrap: normal;
+    width: 35%;
+}
