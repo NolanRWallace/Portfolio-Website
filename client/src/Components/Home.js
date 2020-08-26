@@ -6,6 +6,7 @@ import NavBar from './Navbar/NavBar'
 
 const Home = () => {
     return (
+        //Developed by Nolan Wallace
         <div className="homecontainer">
             <div className="introContainer">
             <Animated animationIn="fadeInDown" animationOut='fadeOutUp' isVisible={true}>
