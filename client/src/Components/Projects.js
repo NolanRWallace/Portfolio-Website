@@ -22,10 +22,12 @@ const Projects = () => {
     const [slideThree, setslideThree] = useState(false)
     const [slideFour, setslideFour] = useState(false)
     const [viewCount, setViewCount] = useState(0)
+    const [animation, setAnimation] = useState('slideInRight')
     // const [projectThreeBool, setProjectThreeBool] = useState(false)
 
 
     const backHandler = () => {
+        setAnimation("slideInLeft")
             if(viewCount === 3){
                 setViewCount(2)
                 setslideFour(false)
@@ -49,6 +51,7 @@ const Projects = () => {
         }
     
     const nextHandler = () => {
+        setAnimation("slideInRight")
             if(viewCount === 0){
                 setViewCount(1)
                 setslideTwo(true)
@@ -114,7 +117,7 @@ const Projects = () => {
             <div className="project">
             {
                 projectOne?slideOne?
-                    <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                    <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <div className='projectDesc'>
                             <h1 className='projTitle'>Pet Party</h1>
                             <p>Pet Shelter and Volunteer Database</p>
@@ -185,7 +188,7 @@ const Projects = () => {
             }
             {
                 projectOne?slideTwo?
-                <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={dropDown} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
@@ -215,7 +218,7 @@ const Projects = () => {
             }
             {
                 projectOne?slideThree?
-                <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={shelterPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
@@ -242,7 +245,7 @@ const Projects = () => {
             }
             {
                 projectOne?slideFour?
-                <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={volPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
@@ -266,7 +269,7 @@ const Projects = () => {
             }
             {
                 projectTwo?slideOne?
-                    <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                    <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <div className='projectDesc'>
                             <h1 className='projTitle'>Your Face</h1>
                             <p>Facebook Clone Coding Dojo Group Project</p>
@@ -344,7 +347,7 @@ const Projects = () => {
             }
             {
                 projectTwo?slideTwo?
-                <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={regLogin} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
@@ -365,7 +368,7 @@ const Projects = () => {
             }
             {
                 projectTwo?slideThree?
-                <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={userHome} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
@@ -392,7 +395,7 @@ const Projects = () => {
             }
             {
                 projectTwo?slideFour?
-                <Animated animationIn="slideInLeft" animationOut="slideOutRight" isVisible={true}>
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={friendPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
