@@ -52,7 +52,7 @@ const Technologies = () => {
         <div className='container'>
             <Animated animationIn="bounceIn" animationOut="bounceOut" isVisible={true}>
             <div className="titleHead">
-                <img src={Gears} alt="" style={{width: "140px", height: "115px"}} />
+                <img src={Gears} alt="" className='imgHead' />
                 <h1 className="pageTitle">Technologies</h1>
             <div style={{position: "relative", top: "0px"}}>
                 <NavBar />
@@ -176,7 +176,7 @@ const Technologies = () => {
                 ""
             }
             </Animated>
-            <img src={Arrow} alt="" onClick={switchTech} className="arrow"/>
+            <button className='Morelink-button' onClick={ switchTech }>Click For More</button>
         </div>
     )
 }

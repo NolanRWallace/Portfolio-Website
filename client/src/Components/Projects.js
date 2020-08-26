@@ -25,7 +25,7 @@ const Projects = () => {
     // const [projectThreeBool, setProjectThreeBool] = useState(false)
 
 
-    const LeftArrowHandler = () => {
+    const backHandler = () => {
             if(viewCount === 3){
                 setViewCount(2)
                 setslideFour(false)
@@ -48,7 +48,7 @@ const Projects = () => {
             }
         }
     
-    const RightArrowHandler = () => {
+    const nextHandler = () => {
             if(viewCount === 0){
                 setViewCount(1)
                 setslideTwo(true)
@@ -73,6 +73,7 @@ const Projects = () => {
         }
     
         const petPartyHandler = () => {
+            setViewCount(0)
             setprojectOne(true)
             setprojectTwo(false)
             setslideOne(true)
@@ -82,6 +83,7 @@ const Projects = () => {
         }
 
         const facebookCloneHandler = () => {
+            setViewCount(0)
             setprojectOne(false)
             setprojectTwo(true)
             setslideOne(true)
@@ -105,8 +107,8 @@ const Projects = () => {
             </Animated>
             <div className='LeftArrow'>
             <Animated animationIn="bounceIn" animationOut="bounceOut" isVisible={true}>
-                    <img src={Arrow} alt='arrow' onClick={ LeftArrowHandler } className="LArrow"/>
-                    <p>Prev</p>
+                    {/* <img src={Arrow} alt='arrow' onClick={ LeftArrowHandler } className="LArrow"/> */}
+                    <button className='link-button' onClick={ backHandler }>Back</button>
             </Animated>
             </div>
             <div className="project">
@@ -187,7 +189,7 @@ const Projects = () => {
                         <img src={dropDown} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
-                                <h3 style={{marginBottom: '10px'}}>Features and Technologies</h3>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
                                 <li>
                                     Api generated state and city dropdown using JQuery and Ajax
                                 </li>
@@ -217,7 +219,7 @@ const Projects = () => {
                         <img src={shelterPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
-                                <h3 style={{marginBottom: '10px'}}>Features and Technologies</h3>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
                                 <li>
                                     Google Map Integration
                                 </li>
@@ -244,7 +246,7 @@ const Projects = () => {
                         <img src={volPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
-                                <h3 style={{marginBottom: '10px'}}>Features and Technologies</h3>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
                                 <li>
                                     Use of Http Only Cookies to verify website access
                                 </li>
@@ -346,7 +348,7 @@ const Projects = () => {
                         <img src={regLogin} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
-                                <h3 style={{marginBottom: '10px'}}>Features and Technologies</h3>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
                                 <li>
                                     Styling done with CSS and BootStrap
                                 </li>
@@ -367,7 +369,7 @@ const Projects = () => {
                         <img src={userHome} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
-                                <h3 style={{marginBottom: '10px'}}>Features and Technologies</h3>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
                                 <li>
                                     Use of Http Cookies to verify website access
                                 </li>
@@ -394,7 +396,7 @@ const Projects = () => {
                         <img src={friendPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
                             <ul>
-                                <h3 style={{marginBottom: '10px'}}>Features and Technologies</h3>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
                                 <li>
                                     Ability to search for friends by name
                                 </li>
@@ -415,20 +417,25 @@ const Projects = () => {
             </div>
             <div className='RightArrow'>
             <Animated animationIn="bounceIn" animationOut="bounceOut" isVisible={true}>
-                    <img src={Arrow} alt="arrow" onClick={ RightArrowHandler } className="RArrow"/>
-                    <p>Next</p>
+                <button className='link-button' onClick={ nextHandler }>Next</button>
             </Animated>
             </div>
             {
                 projectOne?
                 <div className='githubLink'>
-                <img src={githubLogo} alt="" style={{width: "30px", height: "30px" , marginRight: "15px", position:"relative", top:"4px"}}/>
-                <a href="https://github.com/NolanRWallace/Pet-Party" style={{fontSize: '30px', color: 'black', fontWeight:'bold'}}>GitHub Repository</a>
+                
+                <a href="https://github.com/NolanRWallace/Pet-Party" className='github'>
+                    <img src={githubLogo} alt="" className='giticon'/>
+                    GitHub
+                    </a>
                 </div>
                 :
                 <div className='githubLink'>
-                <img src={githubLogo} alt="" style={{width: "30px", height: "30px" , marginRight: "15px", position:"relative", top:"4px"}}/>
-                <a href="https://github.com/DilunArtemis/Project-Obsidian" style={{fontSize: '30px', color: 'black', fontWeight:'bold'}}>GitHub Repository</a>
+                
+                <a href="https://github.com/DilunArtemis/Project-Obsidian" className='github'>
+                    <img src={githubLogo} alt="" className='giticon' />
+                    GitHub
+                </a>
                 </div>
             }
             {/* <div className='footer'>

@@ -7,6 +7,7 @@ import NavBar from './Navbar/NavBar'
 const Home = () => {
     return (
         <div className="homecontainer">
+            <div className="introContainer">
             <Animated animationIn="fadeInDown" animationOut='fadeOutUp' isVisible={true}>
             <div className="profilePic">
                 <img src={profilePic} alt=""  style={{height: "100px", width: "100px", borderRadius: "25%"}} />
@@ -25,6 +26,7 @@ const Home = () => {
                 </p>
                 </div>
             </Animated>
+            </div>
             <NavBar />
         </div>
         

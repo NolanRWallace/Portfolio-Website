@@ -4,10 +4,23 @@
     padding: 0px;
 }
 
+@media screen and (min-width: 1000px){
+.linkBlock1{
+    display: inline-block;
+}
+.linkBlock2{
+    display: inline-block;
+}
+
 .navbarText{
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbarText:hover{
+    text-decoration: underline;
 }
 
 .navBarContainer{
@@ -15,6 +28,7 @@
     margin-right: 50px;
     width: 100%;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .HeaderContainer{
@@ -22,3 +36,89 @@
 }
 
 
+span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+}
+@media screen and (min-width: 700px) and (max-width: 1000px){
+.linkBlock1{
+    display: inline-block;
+}
+
+.navbarText{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbarText:hover{
+    text-decoration: underline;
+}
+
+.navBarContainer{
+    text-align: center;
+    margin-right: 50px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.HeaderContainer{
+    width: 100%;
+}
+
+
+span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.hidesmall{
+    display: hidden;
+    visibility: hidden;
+}
+
+}
+@media screen and (min-width: 0px) and (max-width: 700px){
+.linkBlock1{
+    display: inline-block;
+}
+
+.navbarText{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbarText:hover{
+    text-decoration: underline;
+}
+
+.navBarContainer{
+    text-align: center;
+    margin-right: 50px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.HeaderContainer{
+    width: 100%;
+}
+
+
+span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.hidesmall{
+    display: hidden;
+    visibility: hidden;
+}
+
+}

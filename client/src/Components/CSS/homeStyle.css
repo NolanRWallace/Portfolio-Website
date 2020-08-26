@@ -3,24 +3,95 @@
     padding: 0px;
 }
 
+@media screen and  (min-width:600px){
 
-.homecontainer{
-    padding-top: 150px;
-    background-image: url('./img/seaskyline.jpg');
-    background-size: 100%, 100%;
-    height: 100vh;
-    background-repeat: none;
-}
-
-.profilePic{
+    .homecontainer{
+        padding-top: 150px;
+        background-image: url('./img/darkbg.jpg');
+        background-size: 100%, 100%;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: repeat;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    
+    .introContainer{
+        background-color: rgba(255, 255, 255, 0);
+        width: 40%;
+        margin: auto;
+        border-radius: 15px;
+        padding: 25px;
+    }
+    
+    .profilePic{
     display: inline-block;
     vertical-align: middle;
 }
 
 .info{
     display: inline-block;
-    width: fit-content;
+    width: 100%;
     margin: 20px;
+    word-wrap: normal;
+    width: 80%;
+    color: white;
+}
+
+.about{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nameTitle{
+    display: inline-block;
+    vertical-align: middle;
+    /* position: relative;
+    top: 30px;
+    left: 20px; */
+    margin-left: 25px;
+    color: white;
+}
+
+.name{
+    font-size: 25px;
+}
+
+.title{
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px){
+    .homecontainer{
+        padding-top: 150px;
+        background-image: url('./img/darkbg.jpg');
+        background-size: 100%, 100%;
+        height: auto;
+        width: auto;
+        background-repeat: repeat;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .introContainer{
+        width: 80%;
+        margin: auto;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .profilePic{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info{
+    display: inline-block;
+    width: 100%;
+    margin: 20px;
+    word-wrap: normal;
+    width: 80%;
+    color: white;
 }
 
 .about{
@@ -35,6 +106,7 @@
     top: 30px;
     left: 20px; */
     margin-left: 25px;
+    color: white;
 }
 
 .name{
@@ -44,8 +116,4 @@
 .title{
     font-size: 20px;
 }
-
-.info{
-    word-wrap: normal;
-    width: 35%;
 }

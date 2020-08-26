@@ -3,86 +3,87 @@
     padding: 0px;
 }
 
+@media screen and (min-width: 1200px){
 
-.projectcontainer{
-    padding-top: 10px;
-    background-image: url('./img/seaskyline.jpg');
-    background-size: 100%, 100%;
-    height: 100vh;
-    background-repeat: none;
-}
-
-.pageTitle{
-    font-size: 60px;
-    display: inline-block;
-}
-
-.project{
-    display: inline-block;
-    width: 68%;
-    vertical-align: middle;
-}
-
-.LeftArrow{
-    display: inline-block;
-    width: 10%;
-    vertical-align: middle;
-}
-
-.RightArrow{
-    display: inline-block;
-    width: 10%;
-    vertical-align: middle;
-}
-
-.LArrow{
-    transform: rotate(270deg);
-    width: 115px;
-    height: 150px;
-    position: relative;
-}
-
-.RArrow{
-    transform: rotate(90deg);
-    width: 115px;
-    height: 150px;
-    position: relative;
-}
-
-.webPageimg{
-    width: 1000px;
-    height: 600px;
-    padding-top: 20px;
-    vertical-align: middle;
-}
-
-.infoCol{
-    display: inline-block;
-    vertical-align: bottom;
-    width: 250px;
-    height: 600px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 3px 3px rgb(58, 57, 57);
-    margin-left:20px;
-}
-
-li{
-    font-size: 15px;
-}
-
-.Darrow{
-    transform: rotate(180deg);
-    width: 140px;
-    height: 170px;
-    position: relative;
-}
+    .projectcontainer{
+        padding-top: 10px;
+        background-image: url('./img/darkbg.jpg');
+        background-size: 100%, 100%;
+        height: 100vh;
+        background-repeat: none;
+    }
+    
+    .pageTitle{
+        font-size: 60px;
+        display: inline-block;
+    }
+    
+    .project{
+        display: inline-block;
+        width: 68%;
+        vertical-align: middle;
+    }
+    
+    .LeftArrow{
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+    }
+    
+    .RightArrow{
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+    }
+    
+    .LArrow{
+        transform: rotate(270deg);
+        width: 115px;
+        height: 150px;
+        position: relative;
+    }
+    
+    .RArrow{
+        transform: rotate(90deg);
+        width: 115px;
+        height: 150px;
+        position: relative;
+    }
+    
+    .webPageimg{
+        width: 78%;
+        height: auto;
+        padding-top: 20px;
+        vertical-align: middle;
+    }
+    
+    .infoCol{
+        display: inline-block;
+        vertical-align: middle;
+        width: 19%;
+        height: auto;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 3px 3px rgb(58, 57, 57);
+        margin-left:20px;
+    }
+    
+    li{
+        font-size: 18px;
+    }
+    
+    .Darrow{
+        transform: rotate(180deg);
+        width: 140px;
+        height: 170px;
+        position: relative;
+    }
 
 .footer{
     padding-top: 20px;
     display: block;
     margin: auto;
-    
+    color: white;
 }
 
 .link-button {
@@ -90,10 +91,11 @@ li{
     border: none;
     cursor: pointer;
     text-decoration: none;
-    display: inline;
+    display: inline-block;
     margin: 0;
     padding: 0;
     font-size: 25px;
+    color: white;
 }
 
 .link-button:hover,
@@ -107,6 +109,7 @@ li{
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 10px;
+    color: white
 }
 
 .col4{
@@ -131,7 +134,7 @@ li{
 
 .listHead{
     font-size: 20px;
-
+    
 }
 
 .WIP{
@@ -144,5 +147,342 @@ li{
 }
 
 .githubLink{
+    margin-top: 20px;
+}
+
+.github{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.github:hover{
+    text-decoration: underline;
+}
+
+.giticon{
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.feat-tech{
+    font-size: 28px;
+}
+
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+
+    .projectcontainer{
+        padding-top: 10px;
+        background-image: url('./img/darkbg.jpg');
+        background-size: 100%, 100%;
+        height: 100vh;
+        background-repeat: none;
+    }
+    
+    .pageTitle{
+        font-size: 60px;
+        display: inline-block;
+    }
+    
+    .project{
+        display: inline-block;
+        width: 68%;
+        vertical-align: middle;
+    }
+    
+    .LeftArrow{
+        display: inline-block;
+        width: 5%;
+        vertical-align: middle;
+    }
+    
+    .RightArrow{
+        display: inline-block;
+        width: 5%;
+        vertical-align: middle;
+    }
+    
+    .webPageimg{
+        width: 69%;
+        height: auto;
+        padding-top: 20px;
+        vertical-align: middle;
+    }
+    
+    .infoCol{
+        display: inline-block;
+        vertical-align: middle;
+        width: 25%;
+        height: auto;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 3px 3px rgb(58, 57, 57);
+        margin-left:20px;
+    }
+    
+    li{
+        font-size: 14px;
+    }
+    
+    .Darrow{
+        transform: rotate(180deg);
+        width: 140px;
+        height: 170px;
+        position: relative;
+    }
+
+.footer{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+.link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.link-button:hover,
+.link-button:focus {
+    text-decoration: underline;
+}
+
+.seperator{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    color: white
+}
+
+.col4{
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.projectDesc{
+    background-color: white;
+    border-radius: 20px;
     margin-top: 15px;
+    /* margin: auto; */
+}
+
+.Desc{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top:15px;
+    margin-bottom: 25px;
+}
+
+.listHead{
+    font-size: 20px;
+    
+}
+
+.WIP{
+    margin-top: 10px
+}
+
+.projTitle{
+    font-size:50px;
+    margin-bottom: 5px;;
+}
+
+.githubLink{
+    margin-top: 20px;
+}
+
+.github{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.github:hover{
+    text-decoration: underline;
+}
+
+.giticon{
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
+}
+
+}
+@media screen and (min-width: 0px) and (max-width: 800px){
+
+    .projectcontainer{
+        padding-top: 10px;
+        background-image: url('./img/darkbg.jpg');
+        /* background-size: 100%, 100%; */
+        height: auto;
+        width: auto;
+        background-repeat: none;
+        padding-bottom: 50px;
+    }
+    
+    .pageTitle{
+        font-size: 60px;
+        display: inline-block;
+    }
+    
+    .project{
+        display: inline-block;
+        width: 60%;
+        vertical-align: middle;
+    }
+    
+    .LeftArrow{
+        display: inline-block;
+        width: 8%;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    .RightArrow{
+        display: inline-block;
+        width: 8%;
+        vertical-align: middle;
+        margin-left: 40px;
+    }
+    
+    
+    .webPageimg{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        margin: 15px
+    }
+    
+    .infoCol{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100%;
+        height: 300px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 3px 3px rgb(58, 57, 57);
+        margin-left:20px;
+    }
+    
+    li{
+        font-size: 13px;
+    }
+    
+    .Darrow{
+        transform: rotate(180deg);
+        width: 140px;
+        height: 170px;
+        position: relative;
+    }
+
+.footer{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+.link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.link-button:hover,
+.link-button:focus {
+    text-decoration: underline;
+}
+
+.seperator{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    color: white
+}
+
+.col4{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto
+}
+
+.projectDesc{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    /* margin: auto; */
+}
+
+.Desc{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top:15px;
+    margin-bottom: 25px;
+}
+
+.listHead{
+    font-size: 16px;
+    
+}
+
+.WIP{
+    margin-top: 10px
+}
+
+.projTitle{
+    font-size:50px;
+    margin-bottom: 5px;;
+}
+
+.githubLink{
+    margin-top: 20px;
+}
+
+.github{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.github:hover{
+    text-decoration: underline;
+}
+
+.giticon{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
+}
+
 }
