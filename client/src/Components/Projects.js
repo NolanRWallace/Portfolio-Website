@@ -12,11 +12,14 @@ import githubLogo from './Navbar/icons/github.png'
 import regLogin from './Images/regLogin.png'
 import userHome from './Images/userHome.png'
 import friendPage from './Images/friendPage.png'
-import socket from './Images/socketIO.png'
+import reg from './Images/reg.png'
+import home from './Images/home_page.png'
+import combo from './Images/new_combo.png'
 
 const Projects = () => {
     const [projectOne, setprojectOne] = useState(true)
     const [projectTwo, setprojectTwo] = useState(false)
+    const [projectThree, setprojectThree] = useState(false)
     const [slideOne, setslideOne] = useState(true)
     const [slideTwo, setslideTwo] = useState(false)
     const [slideThree, setslideThree] = useState(false)
@@ -77,8 +80,9 @@ const Projects = () => {
     
         const petPartyHandler = () => {
             setViewCount(0)
-            setprojectOne(true)
+            setprojectOne(false)
             setprojectTwo(false)
+            setprojectThree(true)
             setslideOne(true)
             setslideThree(false)
             setslideTwo(false)
@@ -89,6 +93,18 @@ const Projects = () => {
             setViewCount(0)
             setprojectOne(false)
             setprojectTwo(true)
+            setprojectThree(false)
+            setslideOne(true)
+            setslideThree(false)
+            setslideTwo(false)
+            setslideFour(false)
+        }
+
+        const PwSafeHandler = () => {
+            setViewCount(0)
+            setprojectOne(true)
+            setprojectTwo(false)
+            setprojectThree(false)
             setslideOne(true)
             setslideThree(false)
             setslideTwo(false)
@@ -104,6 +120,8 @@ const Projects = () => {
                 />
                 <h1 className='pageTitle'>Projects</h1>
                 <NavBar />
+                <button onClick={ PwSafeHandler } className='link-button'>Password Safe</button>
+                <p className='seperator'> | </p>
                 <button onClick={ petPartyHandler } className='link-button'>Pet Party</button>
                 <p className='seperator'> | </p>
                 <button onClick={ facebookCloneHandler } className='link-button'>Facebook Clone</button>
@@ -117,6 +135,138 @@ const Projects = () => {
             <div className="project">
             {
                 projectOne?slideOne?
+                    <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
+                        <div className='projectDesc'>
+                            <h1 className='projTitle'>Password Safe</h1>
+                            <p>User Login credential database</p>
+                            <a href="http://www.pw-safe.com">www.pw-safe.com</a>
+                            <p className='Desc'>
+                                Login Credential website to store user Email and Password combonations for login to various apps. inputed Passwords are encrytped
+                                prior to storage in database. Website is deployed to AWS ec2 instance and all traffic is forwarded to port 443 for https connections,
+                                registered domain name.
+                            </p>
+                            <div className='col4'>
+                            <ul>
+                                <h4 className='listHead'>Languages Used</h4>
+                                <li>
+                                    Python
+                                </li>
+                                <li>
+                                    HTML5
+                                </li>
+                                <li>
+                                    Cascading Style Sheets (CSS)
+                                </li>
+                            </ul>
+                            </div>
+                            <div className='col4'>
+                                <ul>
+                                    <h4 className='listHead'>Frameworks and Library's</h4>
+                                    <li>
+                                        Django
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col4'>
+                                <ul>
+                                    <h4 className='listHead'>Database</h4>
+                                    <li>
+                                        SQLite
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col4'>
+                                <ul>
+                                    <h4 className='listHead'>Other Technologies Used</h4>
+                                    <li>
+                                        dotenv
+                                    </li>
+                                    <li>
+                                        Bcrypt
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Animated>
+                :
+                ""
+                :
+                ""
+            }
+            {
+                projectOne?slideTwo?
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
+                        <img src={reg} alt="" className='webPageimg'/>
+                        <div className='infoCol'>
+                            <ul>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
+                                <li>
+                                    registration and login passwords hashed than saved
+                                </li>
+                                <li>
+                                    Styling done with CSS
+                                </li>
+                                <li>
+                                    Link to toggle between registration and login
+                                </li>
+                                <li>
+                                    Unique Validation for email
+                                </li>
+                            </ul>
+                        </div>
+                    </Animated>
+                :
+                ""
+                :
+                ""
+            }
+            {
+                projectOne?slideThree?
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
+                        <img src={home} alt="" className='webPageimg'/>
+                        <div className='infoCol'>
+                            <ul>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
+                                <li>
+                                    Display a table of current Login credentials with account name email and password
+                                </li>
+                                <li>
+                                    Action buttons to edit or delete Login Credential
+                                </li>
+                            </ul>
+                        </div>
+                    </Animated>
+                :
+                ""
+                :
+                ""
+            }
+            {
+                projectOne?slideFour?
+                <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
+                        <img src={combo} alt="" className='webPageimg'/>
+                        <div className='infoCol'>
+                            <ul>
+                                <h3 style={{marginBottom: '10px'}} className='feat-tech'>Features and Technologies</h3>
+                                <li>
+                                    Form to create new Login Account
+                                </li>
+                                <li>
+                                    Drop down to select currently saved Emails and Passwords
+                                </li>
+                                <li>
+                                    Unique Validations to eliminate duplicate account info
+                                </li>
+                            </ul>
+                        </div>
+                    </Animated>
+                :
+                ""
+                :
+                ""
+            }
+            {
+                projectThree?slideOne?
                     <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <div className='projectDesc'>
                             <h1 className='projTitle'>Pet Party</h1>
@@ -187,7 +337,7 @@ const Projects = () => {
                 ""
             }
             {
-                projectOne?slideTwo?
+                projectThree?slideTwo?
                 <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={dropDown} alt="" className='webPageimg'/>
                         <div className='infoCol'>
@@ -217,7 +367,7 @@ const Projects = () => {
                 ""
             }
             {
-                projectOne?slideThree?
+                projectThree?slideThree?
                 <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={shelterPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
@@ -244,7 +394,7 @@ const Projects = () => {
                 ""
             }
             {
-                projectOne?slideFour?
+                projectThree?slideFour?
                 <Animated animationIn={animation} animationOut="slideOutRight" isVisible={true}>
                         <img src={volPage} alt="" className='webPageimg'/>
                         <div className='infoCol'>
@@ -424,7 +574,7 @@ const Projects = () => {
             </Animated>
             </div>
             {
-                projectOne?
+                projectThree?
                 <div className='githubLink'>
                 
                 <a href="https://github.com/NolanRWallace/Pet-Party" className='github'>
@@ -433,6 +583,10 @@ const Projects = () => {
                     </a>
                 </div>
                 :
+                ''
+            }
+            {
+                projectTwo?
                 <div className='githubLink'>
                 
                 <a href="https://github.com/DilunArtemis/Project-Obsidian" className='github'>
@@ -440,6 +594,20 @@ const Projects = () => {
                     GitHub
                 </a>
                 </div>
+            :
+            ''    
+            }
+            {
+                projectOne?
+                <div className='githubLink'>
+                
+                <a href="https://github.com/NolanRWallace/Password_Safe" className='github'>
+                    <img src={githubLogo} alt="" className='giticon' />
+                    GitHub
+                </a>
+                </div>
+            :
+            ''    
             }
             {/* <div className='footer'>
             <h3 style={{ backgroundColor:'white', width:'300px', margin: 'auto' }}>Click Arrow for next project</h3>
