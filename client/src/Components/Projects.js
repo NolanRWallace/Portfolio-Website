@@ -255,6 +255,9 @@ const Projects = () => {
                                     Drop down to select currently saved Emails and Passwords
                                 </li>
                                 <li>
+                                    Passwords are encypted before saved to database and decrypted on client side for user readability 
+                                </li>
+                                <li>
                                     Unique Validations to eliminate duplicate account info
                                 </li>
                             </ul>
